@@ -12,6 +12,11 @@ class Puppet::Provider::SensuAPI < Puppet::Provider
     attr_accessor :old_password
     attr_accessor :access_token
     attr_accessor :refresh_token
+    attr_accessor :validate_namespaces
+  end
+
+  def validate_namespaces
+    self.class.validate_namespaces
   end
 
   def self.update_access_token

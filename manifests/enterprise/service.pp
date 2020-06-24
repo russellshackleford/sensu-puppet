@@ -24,6 +24,7 @@ class sensu::enterprise::service (
       ensure     => $ensure,
       enable     => $enable,
       hasrestart => $hasrestart,
+      provider   => $sensu::service_provider,
       subscribe  => [
         Class['sensu::enterprise::package'],
         Class['sensu::api::config'],

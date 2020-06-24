@@ -406,6 +406,7 @@ class sensu (
   $init_stop_max_wait             = 10,
   $gem_install_options            = undef,
   $hasrestart                     = true,
+  $service_provider               = $facts['service_provider'],
   $enterprise_dashboard_base_path = undef,
   $enterprise_dashboard_host      = undef,
   $enterprise_dashboard_port      = undef,
